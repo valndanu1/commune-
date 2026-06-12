@@ -1,67 +1,120 @@
-/* Nav bar container */
+/* NAVBAR WRAPPER */
 nav {
-  background-color: #1a1a2e;   /* Deep navy */
+  background: linear-gradient(90deg, #0f172a, #1a1a2e);
   display: flex;
   justify-content: space-between;
-  align-items: right;
-  padding: 12px 40px;
+  align-items: center;
+  padding: 14px 60px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
 }
 
-/* Logo */
+/* LOGO */
 nav .logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #eaeaea;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
   text-decoration: none;
 }
 
-/* Links */
+/* NAV LINKS CONTAINER */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
+/* NAV LINKS */
 nav ul li a {
-  color: #eaeaea;
+  color: #e5e7eb;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  padding: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT (UNDERLINE ANIMATION) */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #f59e0b;
+  transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #f39c12;              /* Golden hover */
-  border-bottom: 2px solid #f39c12;
+  color: #f59e0b;
 }
 
-/* Buttons */
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* BUTTON GROUP */
+nav .buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGIN BUTTON */
 nav .buttons .login {
   background: transparent;
-  border: 1px solid #eaeaea;
-  color: #eaeaea;
+  border: 1px solid #e5e7eb;
+  color: #e5e7eb;
   padding: 8px 16px;
-  margin-right: 10px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 nav .buttons .login:hover {
-  background: #eaeaea;
-  color: #1a1a2e;
+  background: #e5e7eb;
+  color: #0f172a;
 }
 
+/* SIGNUP BUTTON */
 nav .buttons .signup {
-  background-color: #f39c12;
+  background: #f59e0b;
   border: none;
-  color: #fff;
+  color: white;
   padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 nav .buttons .signup:hover {
-  background-color: #d35400;   /* Darker orange */
+  background: #d97706;
+  transform: translateY(-1px);
+}
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 768px) {
+  nav {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav .buttons {
+    margin-top: 10px;
+  }
 }
