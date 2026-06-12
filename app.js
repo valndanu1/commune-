@@ -1,5 +1,4 @@
 
-```javascript
 document.addEventListener("DOMContentLoaded", () => {
 
     // Theme Toggle
