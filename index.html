@@ -1,0 +1,193 @@
+### File 1: `index.html`
+
+Save this as **index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commune - Connect. Share. Belong.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Commune</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Communities</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button id="themeToggle">🌙</button>
+            <button id="loginBtn">Login</button>
+            <button id="signUpBtn">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Connect. Share. Belong.</h1>
+            <p>
+                Join communities, connect with people,
+                and share what matters most.
+            </p>
+
+            <button id="heroGetStarted" class="primary-btn">
+                Get Started
+            </button>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
+                alt="Community">
+        </div>
+    </section>
+
+    <!-- Account Creation Section -->
+    <section class="account-section">
+
+        <h2>Create Your Commune Account</h2>
+
+        <form class="signup-form">
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="password"
+                placeholder="Password"
+                required>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Main Layout -->
+    <main class="main-container">
+
+        <!-- Communities -->
+        <aside class="sidebar">
+
+            <h3>Popular Communities</h3>
+
+            <div class="community">
+
+                <span>🌍 Travel Enthusiasts</span>
+
+                <button class="join-btn">
+                    Join
+                </button>
+
+            </div>
+
+            <div class="community">
+
+                <span>💻 Tech Innovators</span>
+
+                <button class="join-btn">
+                    Join
+                </button>
+
+            </div>
+
+            <div class="community">
+
+                <span>💪 Fitness & Health</span>
+
+                <button class="join-btn">
+                    Join
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- Feed -->
+        <section class="feed">
+
+            <div class="post-creator">
+
+                <textarea
+                    id="postInput"
+                    placeholder="Share something with your community...">
+                </textarea>
+
+                <button id="submitPostBtn">
+                    Post
+                </button>
+
+            </div>
+
+            <div id="mainFeed">
+
+                <article class="post">
+
+                    <h3>Beautiful Sunset Hike</h3>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800"
+                        alt="Hiking">
+
+                    <p>
+                        Amazing experience exploring nature today.
+                    </p>
+
+                </article>
+
+                <article class="post">
+
+                    <h3>New Project Launch</h3>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                        alt="Technology">
+
+                    <p>
+                        Excited to launch our latest community project.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Explore. Engage. Build.</h2>
+
+        <p>
+            © 2026 Commune. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```
+
+Next, I'll provide the complete **styles.css** file.
