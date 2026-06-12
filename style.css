@@ -3,18 +3,18 @@
   background-color: #28a745; /* Green color */
   display: flex;
   justify-content: 15px;
-  align-items: left;
+  align-items: right;
   padding: 25px 35px;
 }
 
 /* 2. Space out the center items */
-.nav-left {
+.nav-right {
   display: flex;
   gap: 60px; /* Adjust spacing between items here */
 }
 
 /* 3. Push the right side contents to the far right */
-.nav-left {
+.nav-right {
   margin-left: auto;
 }
 
