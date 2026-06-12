@@ -25,3 +25,43 @@
   font-size: 23px;
   font-weight: bold;
 }
+/* Center the section on the page */
+.account-section {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Force the form elements into a vertical column list layout */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Creates spacing between list items */
+}
+
+/* Style the inputs */
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Style the submit button */
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
