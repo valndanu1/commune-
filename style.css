@@ -1,8 +1,4 @@
-You're right — I described the files but didn't include the actual code. Here are the complete files.
 
-## File 2: `styles.css`
-
-```css
 :root {
     --primary: #16a34a;
     --primary-dark: #15803d;
@@ -37,6 +33,6 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 15px
-```
+
