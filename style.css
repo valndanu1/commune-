@@ -15,7 +15,7 @@
 
 /* 3. Push the right side contents to the far right */
 .nav-right {
-  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Basic link styling for visibility */
