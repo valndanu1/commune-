@@ -3,7 +3,7 @@ nav {
   background-color: #1a1a2e;   /* Deep navy */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   padding: 12px 40px;
   position: sticky;
   top: 0;
