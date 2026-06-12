@@ -1,0 +1,42 @@
+You're right — I described the files but didn't include the actual code. Here are the complete files.
+
+## File 2: `styles.css`
+
+```css
+:root {
+    --primary: #16a34a;
+    --primary-dark: #15803d;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #333;
+    --border: #e5e7eb;
+}
+
+[data-theme="dark"] {
+    --bg: #0d1117;
+    --card: #161b22;
+    --text: #f0f6fc;
+    --border: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px
+```
