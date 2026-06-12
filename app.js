@@ -1,4 +1,3 @@
-## File 3: `app.js`
 
 Save this as **app.js** in the same folder as `index.html` and `styles.css`.
 
@@ -28,6 +27,3 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             localStorage.setItem("theme", newTheme);
-
-           
-```
