@@ -1,38 +1,67 @@
-
-:root {
-    --primary: #16a34a;
-    --primary-dark: #15803d;
-    --bg: #f4f6f8;
-    --card: #ffffff;
-    --text: #333;
-    --border: #e5e7eb;
+/* Nav bar container */
+nav {
+  background-color: #1a1a2e;   /* Deep navy */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-[data-theme="dark"] {
-    --bg: #0d1117;
-    --card: #161b22;
-    --text: #f0f6fc;
-    --border: #30363d;
+/* Logo */
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #eaeaea;
+  text-decoration: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+nav ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Navbar */
-.navbar {
-    background: var(--primary);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    padding: 15px
+nav ul li a:hover {
+  color: #f39c12;              /* Golden hover */
+  border-bottom: 2px solid #f39c12;
+}
 
+/* Buttons */
+nav .buttons .login {
+  background: transparent;
+  border: 1px solid #eaeaea;
+  color: #eaeaea;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav .buttons .login:hover {
+  background: #eaeaea;
+  color: #1a1a2e;
+}
+
+nav .buttons .signup {
+  background-color: #f39c12;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav .buttons .signup:hover {
+  background-color: #d35400;   /* Darker orange */
+}
