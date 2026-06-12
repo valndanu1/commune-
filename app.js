@@ -1,6 +1,4 @@
 
-Save this as **app.js** in the same folder as `index.html` and `styles.css`.
-
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
 
